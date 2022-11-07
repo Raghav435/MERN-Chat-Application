@@ -6,8 +6,8 @@ const {
   renameGroup,
   addToGroup,
   removeFromGroup,
-} = require("../controllers/chatControllers");
-const auth = require("../middleware/authMiddleware");
+} = require("../controllers/Chat.controller");
+const auth = require("../middlewares/AuthMiddlewares");
 
 router.route("/").post(auth, accessChat).get(auth, fetchChats);
 

@@ -3,8 +3,8 @@ const {
   addNewNotification,
   deleteNotification,
   getNotification,
-} = require("../controllers/notificationController");
-const auth = require("../middleware/authMiddleware");
+} = require("../controllers/Notification.controller");
+const auth = require("../middlewares/AuthMiddlewares");
 
 router.route("/").post(auth, addNewNotification).get(auth, getNotification);
 router.route("/:notificationId").delete(auth, deleteNotification);

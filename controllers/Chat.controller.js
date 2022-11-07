@@ -1,5 +1,5 @@
-const Chat = require("../models/chat");
-const User = require("../models/user");
+const Chat = require("../models/Chat.model");
+const User = require("../models/User.model");
 const asyncHandler = require("express-async-handler");
 
 // @desc		Access or initiate a chat between two persons
