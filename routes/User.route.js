@@ -3,8 +3,8 @@ const {
   registerUser,
   loginUser,
   allUsers,
-} = require("../controllers/userControllers");
-const auth = require("../middleware/authMiddleware");
+} = require("../controllers/User.controller");
+const auth = require("../middlewares/AuthMiddlewares");
 
 router.route("/").post(registerUser).get(auth, allUsers);
 router.route("/login").post(loginUser);

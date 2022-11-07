@@ -1,7 +1,7 @@
-const Message = require("../models/message");
-const User = require("../models/user");
+const Message = require("../models/Message.model");
+const User = require("../models/User.model");
 const asyncHandler = require("express-async-handler");
-const Chat = require("../models/chat");
+const Chat = require("../models/Chat.model");
 
 // @desc		Send message
 // @route		POST /messages

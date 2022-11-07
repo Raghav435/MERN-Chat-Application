@@ -1,12 +1,12 @@
 const express = require("express");
 const colors = require("colors");
-const dbConnect = require("./db.js");
+const dbConnect = require("./config/db");
 require("dotenv").config();
-const { errorHandler, routeNotFound } = require("./middleware/errorMiddleware");
-const userRoutes = require("./routes/userRoutes");
-const chatRoutes = require("./routes/chatRoutes");
-const messageRoutes = require("./routes/messageRoutes");
-const notificationRoutes = require("./routes/notificationRoutes");
+const { errorHandler, routeNotFound } = require("./middlewares/ErrorMiddlewares");
+const userRoutes = require("./routes/User.route");
+const chatRoutes = require("./routes/Chat.route");
+const messageRoutes = require("./routes/Message.route");
+const notificationRoutes = require("./routes/Notification.route");
 const path = require("path");
 
 dbConnect();
