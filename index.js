@@ -2,12 +2,16 @@ const express = require("express");
 const colors = require("colors");
 const dbConnect = require("./config/db");
 require("dotenv").config();
-const { errorHandler, routeNotFound } = require("./middlewares/ErrorMiddlewares");
+const {
+  errorHandler,
+  routeNotFound,
+} = require("./middlewares/ErrorMiddlewares");
 const userRoutes = require("./routes/User.route");
 const chatRoutes = require("./routes/Chat.route");
 const messageRoutes = require("./routes/Message.route");
 const notificationRoutes = require("./routes/Notification.route");
 const path = require("path");
+const PORT = process.env.PORT || 5000;
 
 dbConnect();
 const app = express();
@@ -42,11 +46,11 @@ if (process.env.NODE_ENV === "production") {
 app.use(routeNotFound);
 app.use(errorHandler);
 
-const server = app.listen(process.env.PORT || 5000, () => {
+const server = app.listen(PORT, () => {
   console.log(
     colors.brightMagenta(`\nServer is UP on PORT ${process.env.SERVER_PORT}`)
   );
-  console.log(`Visit  ` + colors.underline.blue(`localhost:${5000}`));
+  console.log(`Visit  ` + colors.underline.blue(`localhost:${PORT}`));
 });
 
 const io = require("socket.io")(server, {
