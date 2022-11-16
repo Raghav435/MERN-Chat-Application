@@ -13,8 +13,10 @@ const notificationRoutes = require("./routes/Notification.route");
 const path = require("path");
 const PORT = process.env.PORT || 5000;
 
-dbConnect();
 const app = express();
+
+dbConnect();
+
 app.use(express.json());
 
 // Main routes
