@@ -12,7 +12,7 @@ import {
   import { valid } from "../Util/valid";
   import { toast } from "react-toastify";
   import axios from "axios";
-  import Loader from "./Loader";
+  import Loader from "./loader";
   
   const Register = () => {
     const [show, setShow] = useState(false);

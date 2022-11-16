@@ -19,7 +19,7 @@ import { useDisclosure } from "@chakra-ui/hooks";
 import { ChatState } from "../context/ChatProvider";
 import { IoIosArrowForward } from "react-icons/io";
 import UserListItem from "./UserListItem";
-import Loader from "./Loader";
+import Loader from "./loader";
 import UserBadgeItem from "./UserBadgeItem";
 
 const GroupChatModal = ({ children }) => {

@@ -5,7 +5,7 @@ import {
   isSameSender,
   isSameSenderMargin,
   isSameUser,
-} from "../config/ChatLogics";
+} from "../config/ChatLogic";
 import { ChatState } from "../context/ChatProvider";
 import { Tooltip, Avatar } from "@chakra-ui/react";
 

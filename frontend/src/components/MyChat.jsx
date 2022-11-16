@@ -4,8 +4,8 @@ import { toast } from "react-toastify";
 import axios from "axios";
 import { Box, Text, Button, Stack, Avatar, Divider } from "@chakra-ui/react";
 import { IoMdAdd, IoMdPeople } from "react-icons/io";
-import Loader from "./Loader";
-import { getSender } from "../config/ChatLogics";
+import Loader from "./loader";
+import { getSender } from "../config/ChatLogic";
 import GroupChatModal from "./GroupChatModal";
 
 const MyChats = ({ fetchAgain }) => {

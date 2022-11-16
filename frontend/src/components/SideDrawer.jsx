@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ProfileModel from "./ProfileModel";
 import UserListItem from "./UserListItem";
-import Loader from "./Loader";
+import Loader from "./loader";
 import {
   Box,
   Tooltip,

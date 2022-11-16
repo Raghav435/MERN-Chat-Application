@@ -9,10 +9,10 @@ import {
   Input,
 } from "@chakra-ui/react";
 import { IoIosArrowBack } from "react-icons/io";
-import { getSender } from "../config/ChatLogics";
+import { getSender } from "../config/ChatLogic";
 import ProfileModel from "./ProfileModel";
 import UpdateGroupChatModal from "./UpdateGroupChatModal";
-import Loader from "./Loader";
+import Loader from "./loader";
 import { toast } from "react-toastify";
 import axios from "axios";
 import ScrollableChat from "./ScrollableChat";

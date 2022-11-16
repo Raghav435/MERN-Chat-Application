@@ -24,7 +24,7 @@ import { toast } from "react-toastify";
 import { ChatState } from "../context/ChatProvider";
 import UserBadgeItem from "./UserBadgeItem";
 import axios from "axios";
-import Loader from "./Loader";
+import Loader from "./loader";
 import UserListItem from "./UserListItem";
 
 const UpdateGroupChatModal = ({
