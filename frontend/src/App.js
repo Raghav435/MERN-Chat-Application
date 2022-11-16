@@ -1,5 +1,8 @@
-import logo from "./logo.svg";
 import "./App.css";
+import {Routes, Route} from "react-router-dom"
+import HomePage from "./pages/HomePage"
+import ChatPage from "./pages/ChatPage"
+import FourOFour from "./pages/PageNotFound"
 
 function App() {
   return (
