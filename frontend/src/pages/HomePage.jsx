@@ -44,7 +44,7 @@ const HomePage = () => {
             bg="#fff"
             mt="2em"
           >
-            <Text fontSize="4xl">De-Link</Text>
+            <Text fontSize="4xl">Chat App</Text>
           </Box>
           <Box w="100%" p="4" mt="20px">
             <Tabs isFitted variant="enclosed">
